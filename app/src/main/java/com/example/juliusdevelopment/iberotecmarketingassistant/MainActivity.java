@@ -1,5 +1,6 @@
 package com.example.juliusdevelopment.iberotecmarketingassistant;
 
+import android.content.Intent;
 import android.net.Uri;
 //import android.provider.MediaStore;
 import android.support.v7.app.ActionBarActivity;
@@ -16,6 +17,7 @@ public class MainActivity extends ActionBarActivity {
 
 
     Button videoButton1, videoButton2, videoButton3;
+    Button registrationButton;
     //Button registerButton;
     MediaController mdc1,mdc2;
     VideoView videoDeMuestra,videoDeMuestra2,videoDeMuestra3;
@@ -32,10 +34,12 @@ public class MainActivity extends ActionBarActivity {
         videoButton1=(Button)findViewById(R.id.video_btn_1);
         videoButton2=(Button)findViewById(R.id.video_btn_2);
         videoButton3=(Button)findViewById(R.id.video_btn_3);
+        registrationButton=(Button)findViewById(R.id.registro_btn);
 
         videoButton1.setOnClickListener(centralHandler);
         videoButton2.setOnClickListener(centralHandler);
         videoButton3.setOnClickListener(centralHandler);
+        registrationButton.setOnClickListener(centralHandler);
         //Fin de la definicion de botones
 
         videoDeMuestra=(VideoView) findViewById(R.id.videoView);
@@ -102,9 +106,24 @@ public class MainActivity extends ActionBarActivity {
                     playVideo(videoString);
                     break;
                 //playVideoTest(3);
+                case R.id.registro_btn:
+                    loadRegistrationPage();
+                    break;
             }
         }
     };
+
+    public void loadRegistrationPage(){
+        Intent intent=new Intent(this,ClientRegistration.class);
+        startActivity(intent);
+        /*
+        *  Intent intent = new Intent(this,  DisplayMessageActivity.class);
+        EditText editText = (EditText) findViewById(R.id.edit_message);
+        String message = editText.getText().toString();
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
+        * */
+    }
 
 
 
