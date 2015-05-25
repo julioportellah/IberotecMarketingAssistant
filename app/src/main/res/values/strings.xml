@@ -5,5 +5,7 @@
     <string name="btn1_text">Video 1</string>
     <string name="btn2_text">Video 2</string>
     <string name="btn3_text">Video 3</string>
-    <string name="btn4_text">Registrar</string>
+    <string name="btn4_text">Video 4</string>
+    <string name="btn5_text">Video 5</string>
+    <string name="btn_register_text">Registrar</string>
 </resources>

@@ -12,46 +12,83 @@
         android:orientation="vertical"
         android:transitionGroup="false">
 
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/botonesDeSeleccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:id="@+id/botonesDeSeleccion"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                <HorizontalScrollView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/horizontalScrollView"
+                    android:layout_weight=".75"
+                    >
 
-            <Button
-                android:id="@+id/video_btn_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/btn1_text"
-                android:rotation="180"
-                android:layout_weight="1"
-                />
-            <Button
-                android:id="@+id/video_btn_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/btn2_text"
-                android:rotation="180"
-                android:layout_weight="1"
-                />
-            <Button
-                android:id="@+id/video_btn_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/btn3_text"
-                android:rotation="180"
-                android:layout_weight="1"
-                />
-            <Button
-                android:id="@+id/registro_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/btn4_text"
-                android:rotation="180"
-                android:layout_weight="1"
-                />
-        </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/botonesDeVideo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/video_btn_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn1_text"
+                    android:rotation="180"
+                    android:layout_weight="1"
+                    />
+
+                <Button
+                    android:id="@+id/video_btn_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn2_text"
+                    android:rotation="180"
+                    android:layout_weight="1"
+                    />
+
+                <Button
+                    android:id="@+id/video_btn_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn3_text"
+                    android:rotation="180"
+                    android:layout_weight="1"
+                    />
+
+                <Button
+                    android:id="@+id/video_btn_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn4_text"
+                    android:rotation="180"
+                    android:layout_weight="1"
+                    />
+                <Button
+                    android:id="@+id/video_btn_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn5_text"
+                    android:rotation="180"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            </HorizontalScrollView>
+                <Button
+                    android:id="@+id/registro_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_register_text"
+                    android:rotation="180"
+                    android:layout_weight=".25"
+                    />
+
+    </LinearLayout>
+
         <VideoView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
