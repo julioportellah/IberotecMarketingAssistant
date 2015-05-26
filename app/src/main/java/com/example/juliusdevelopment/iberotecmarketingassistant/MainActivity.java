@@ -49,16 +49,11 @@ public class MainActivity extends ActionBarActivity {
         //Fin de la definicion de botones
 
         videoDeMuestra=(VideoView) findViewById(R.id.videoView);
-        //videoDeMuestra2=(VideoView) findViewById(R.id.videoView);
-        //videoDeMuestra3=(VideoView) findViewById(R.id.videoView);
-
 
         String path1="android.resource://"+getPackageName()+"/"+R.raw.video_frecuencia_latina;
         //String path2="android.resource://"+getPackageName()+"/"+R.raw.video_globo;
         mdc1=new MediaController(this);
-        //mdc2=new MediaController(this);
         videoDeMuestra.setVideoURI(Uri.parse(path1));
-        //videoDeMuestra.setVideoPath(path1);
         mdc1.setAnchorView(videoDeMuestra);
         videoDeMuestra.setMediaController(mdc1);
     }
