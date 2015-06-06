@@ -86,13 +86,22 @@
             </LinearLayout>
 
             </HorizontalScrollView>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cara a Cara"
+                    android:id="@+id/mode_btn"
+                    android:rotation="180"
+                    android:layout_weight=".100"/>
+
                 <Button
                     android:id="@+id/registro_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/btn_register_text"
                     android:rotation="180"
-                    android:layout_weight=".25"
+                    android:layout_weight=".20"
                     />
 
     </LinearLayout>

@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 //import android.widget.Toast;
+import android.widget.Toast;
 import android.widget.VideoView;
 import android.widget.MediaController;
 
@@ -17,7 +18,7 @@ public class MainActivity extends ActionBarActivity {
 
 
     Button videoButton1, videoButton2, videoButton3,videoButton4,videoButton5,videoButton6;
-    Button registrationButton;
+    Button registrationButton,modeButton;
     //Button registerButton;
     MediaController mdc1,mdc2;
     VideoView videoDeMuestra,videoDeMuestra2,videoDeMuestra3;
@@ -38,6 +39,8 @@ public class MainActivity extends ActionBarActivity {
         videoButton5=(Button)findViewById(R.id.video_btn_5);
         videoButton6=(Button)findViewById(R.id.video_btn_6);
         registrationButton=(Button)findViewById(R.id.registro_btn);
+        modeButton=(Button)findViewById(R.id.mode_btn);
+
 
         videoButton1.setOnClickListener(centralHandler);
         videoButton2.setOnClickListener(centralHandler);
@@ -46,6 +49,7 @@ public class MainActivity extends ActionBarActivity {
         videoButton5.setOnClickListener(centralHandler);
         videoButton6.setOnClickListener(centralHandler);
         registrationButton.setOnClickListener(centralHandler);
+        modeButton.setOnClickListener(centralHandler);
         //Fin de la definicion de botones
 
         videoDeMuestra=(VideoView) findViewById(R.id.videoView);
@@ -135,9 +139,38 @@ public class MainActivity extends ActionBarActivity {
                 case R.id.registro_btn:
                     loadRegistrationPage();
                     break;
+                case R.id.mode_btn:
+                    changeMode();
+                    break;
             }
         }
     };
+
+    public void changeMode(){
+        if(modeButton.getText().toString().equals("Cara a Cara")){
+            modeButton.setText("Unipersonal");
+            modeButton.setRotation(0);
+            registrationButton.setRotation(0);
+            videoButton1.setRotation(0);
+            videoButton2.setRotation(0);
+            videoButton3.setRotation(0);
+            videoButton4.setRotation(0);
+            videoButton5.setRotation(0);
+            videoButton6.setRotation(0);
+            Toast.makeText(MainActivity.this, "Éxito!!!", Toast.LENGTH_SHORT).show();
+        }else{
+            modeButton.setText("Cara a Cara");
+            modeButton.setRotation(180);
+            registrationButton.setRotation(180);
+            videoButton1.setRotation(180);
+            videoButton2.setRotation(180);
+            videoButton3.setRotation(180);
+            videoButton4.setRotation(180);
+            videoButton5.setRotation(180);
+            videoButton6.setRotation(180);
+            Toast.makeText(MainActivity.this, "Éxito también!!!", Toast.LENGTH_SHORT).show();
+        }
+    }
 
     public void loadRegistrationPage(){
         Intent intent=new Intent(this,ClientRegistration.class);
