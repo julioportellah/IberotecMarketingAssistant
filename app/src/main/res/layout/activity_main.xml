@@ -93,6 +93,9 @@
                     android:text="Cara a Cara"
                     android:id="@+id/mode_btn"
                     android:rotation="180"
+                    android:background="#164651"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
                     android:layout_weight=".100"/>
 
                 <Button
@@ -101,6 +104,9 @@
                     android:layout_height="wrap_content"
                     android:text="@string/btn_register_text"
                     android:rotation="180"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:background="#7ADE46"
                     android:layout_weight=".20"
                     />
 

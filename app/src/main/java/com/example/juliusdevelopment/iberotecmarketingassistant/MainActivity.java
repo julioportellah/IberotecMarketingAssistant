@@ -1,5 +1,6 @@
 package com.example.juliusdevelopment.iberotecmarketingassistant;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 //import android.provider.MediaStore;
@@ -8,13 +9,14 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 //import android.widget.Toast;
 import android.widget.Toast;
 import android.widget.VideoView;
 import android.widget.MediaController;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
 
 
     Button videoButton1, videoButton2, videoButton3,videoButton4,videoButton5,videoButton6;

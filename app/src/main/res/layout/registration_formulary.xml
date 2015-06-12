@@ -75,18 +75,24 @@
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:hint="Apellido Paterno"
+                        android:textColorHint="#7ADE46"
+                        android:textStyle="bold"
                         android:layout_alignParentLeft="true"/>
                     <EditText
                         android:id="@+id/apellido_materno"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:hint="Apellido Materno"
+                        android:textColorHint="#7ADE46"
+                        android:textStyle="bold"
                         android:layout_alignParentLeft="true"/>
                     <EditText
                         android:id="@+id/nombres_completos"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:hint="Nombres Completos"
+                        android:textColorHint="#7ADE46"
+                        android:textStyle="bold"
                         android:layout_alignParentLeft="true"/>
                 </LinearLayout>
                 <LinearLayout
@@ -127,6 +133,8 @@
                         android:id="@+id/dni"
                         android:layout_width="160dp"
                         android:layout_height="wrap_content"
+                        android:textColorHint="#7ADE46"
+                        android:textStyle="bold"
                         android:inputType="number"
                         android:hint="DNI"/>
 
@@ -151,6 +159,8 @@
                         android:layout_alignParentLeft="true"/>
                     <EditText
                         android:id="@+id/distrito"
+                        android:textColorHint="#7ADE46"
+                        android:textStyle="bold"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:hint="Distrito"
@@ -184,6 +194,8 @@
                         android:layout_height="wrap_content"
                         android:inputType="number"
                         android:layout_weight=".25"
+                        android:textColorHint="#7ADE46"
+                        android:textStyle="bold"
                         android:hint="Telefono Fijo"
                         />
                     <EditText
@@ -192,6 +204,8 @@
                         android:layout_height="wrap_content"
                         android:inputType="number"
                         android:layout_weight=".25"
+                        android:textColorHint="#7ADE46"
+                        android:textStyle="bold"
                         android:hint="Celular"/>
                     <EditText
                         android:id="@+id/correo_electronico"
@@ -199,6 +213,8 @@
                         android:layout_height="wrap_content"
                         android:inputType="textEmailAddress"
                         android:layout_weight=".5"
+                        android:textColorHint="#7ADE46"
+                        android:textStyle="bold"
                         android:hint="Correo Electrónico,"/>
                 </LinearLayout>
                 <LinearLayout
